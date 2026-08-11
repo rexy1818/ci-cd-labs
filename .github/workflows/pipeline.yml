@@ -1,0 +1,19 @@
+name: Primer Pipeline CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje de bienvenida
+        run: echo "Bienvenido al primer pipeline CI/CD"
+
+      - name: Fecha y hora de ejecución
+        run: date
+
+      - name: Versión de Git instalada
+        run: git --version
