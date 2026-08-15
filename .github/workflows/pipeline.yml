@@ -17,4 +17,4 @@ jobs:
         run: date
 
       - name: Versión de Git instalada
-        run: git --version
+        run: git --versionnnnn
