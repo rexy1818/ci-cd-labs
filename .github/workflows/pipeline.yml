@@ -4,13 +4,14 @@ on:
   push:
     branches:
       - main
+      - feature/*
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Mensaje de bienvenida
-        run: echo "Bienvenido al primer pipeline CI/CD"
+        run: echo "Bienvenido al primer pipeline CI/CD."
 
       - name: Fecha y hora de ejecución
         run: date
