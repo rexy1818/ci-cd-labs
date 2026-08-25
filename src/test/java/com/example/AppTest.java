@@ -1,5 +1,4 @@
-Set-Content -Path "src\test\java\com\example\AppTest.java" -Value @"
-package com.example;
+﻿package com.example;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -12,4 +11,3 @@ public class AppTest {
         assertTrue(resultado == 4, "El resultado debería ser 4");
     }
 }
-" -Encoding UTF8
