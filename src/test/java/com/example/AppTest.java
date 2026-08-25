@@ -8,6 +8,6 @@ public class AppTest {
     @Test
     public void testSuma() {
         int resultado = 2 + 2;
-        assertTrue(resultado == 4, "El resultado debería ser 4----");
+        assertTrue(resultado == 4, "El resultado debería ser 4");
     }
 }
