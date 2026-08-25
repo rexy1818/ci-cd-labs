@@ -7,10 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class AppTest {
 
     @Test
-    public void testSumaFallo() {
+    public void testSuma() {
         int resultado = 2 + 2;
-        // Provocamos un fallo deliberado para el laboratorio
-        assertTrue(resultado == 5, "Fallo simulado: el resultado esperado no coincide");
+        assertTrue(resultado == 4, "El resultado debería ser 4");
     }
 }
 " -Encoding UTF8
