@@ -18,3 +18,15 @@ jobs:
 
       - name: Versión de Git instalada
         run: git --version
+
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar entorno Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Compilar y ejecutar pruebas con Maven
+        run: mvn test
